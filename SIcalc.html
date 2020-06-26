@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SI calculator</title>
+    <script type="text/javascript">
+      function SimpleInterest()
+      {
+        a=eval(amt.value)
+        b=eval(int.value)
+        c=eval(year.value)
+        iam.value=(a*b/100)*c
+        emt.value=a+eval(iam.value)
+      }
+
+    </script>
+  </head>
+  <body bgcolor="lightyellow" leftmargin="0" rightmargin="0" type="text">
+    <center>
+    <h1>SI-CALCULATOR</h1><hr size="3" noshade>
+      <table bgcolor="lightblue" border="2">
+      <tr>
+        <td>Principal-amount:</td>
+        <td><input type="text" id="amt"></td>
+      </tr>
+      <tr>
+        <td>Simple Interest:</td>
+        <td><input type="text" id="int"></td>
+      </tr>
+      <tr>
+        <td>no.of Years:</td>
+        <td><input type="text" id="year"></td>
+      </tr>
+      <tr>
+        <td>SI-amount:</td>
+        <td><input type="text" id="iam"></td>
+      </tr>
+      <tr>
+        <td>end-amount:</td>
+        <td><input type="text" id="emt"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="click" onclick="SimpleInterest()"></td>
+      </tr>
+
+    </table>
+    </center>
+
+  </body>
+</html>
